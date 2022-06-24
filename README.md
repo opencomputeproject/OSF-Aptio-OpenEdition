@@ -24,14 +24,20 @@ git clone --recurse-submodules https://github.com/opencomputeproject/Aptio-OE.gi
 * Build options:
    * -b : Build Mode(DEBUG,RELEASE)
    * -c : Clean the source, Build & BUILDS directories, and BaseTools
-* Example : use  the command python3 JadeBuild.py -b release
+* Open the terminal and make sure you are in path where JadeBuild.py is present
+* Example :  python3 JadeBuild.py -b release
 * On successful build, BIOS rom file is created in BUILDS directory
+
+## Source Code Details
+* EDK2 source based on edk2-stable202202
+* EDK2-Platforms based on v2.04.100-ampere (https://github.com/AmpereComputing/edk2-platforms)
+* EDK2-Ampere-Tools based on based on commit hash e67a6acc165c3d9c38037d6ea4acded5b03b2951 (https://github.com/AmpereComputing/edk2-ampere-tools)
 
 ## Validation 
 <pre>
 Configuration:
    Platform       : Ampere Mt Jade
-   Processer      : Ampere Altra
+   Processor      : Ampere Altra
    BMC Firmware   : AMI SPX
 </pre>
 
